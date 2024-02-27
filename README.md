@@ -4,6 +4,8 @@
 
 ### First, pull this repository.
 
+`git clone https://github.com/ucfchandra/django-mysql-podman-helloworld.git`
+
 ### Second, ensure Podman is installed. Install podman-compose as well.
 
 For Podman:
