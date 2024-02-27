@@ -1,0 +1,18 @@
+# Podman-Django-MySQL Hello World!
+
+## A Hello World Django web application connected to a MySQL database containerized in podman and composed with podman-compose
+
+### First, pull this repository.
+
+### Second, ensure Podman is installed. Install podman-compose as well.
+
+For Podman:
+https://podman.io/docs/installation
+
+For podman-compose:
+
+https://github.com/containers/podman-compose
+
+### Third, run the podman compose up command from the directory holding this repository. If this command does not work, check that you are in the directory with the podman-compose.yml file
+
+`podman compose up`
