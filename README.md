@@ -15,6 +15,8 @@ For podman-compose:
 
 https://github.com/containers/podman-compose
 
-### Third, run the podman compose up command from the directory holding this repository. If this command does not work, check that you are in the directory with the podman-compose.yml file
+### Third, run the podman compose up command from the directory holding this repository. 
 
 `podman compose up`
+
+If this command does not work, check that you are in the directory with the podman-compose.yml file
