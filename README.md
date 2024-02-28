@@ -15,7 +15,13 @@ For podman-compose:
 
 https://github.com/containers/podman-compose
 
-### Third, ensure your architecture matches the architecture of the base image in the Contianerfiles. Uncomment the correct Containerfile architecture for your use case
+### Third, ensure the podman machine is initialized and running. Use these two commands:
+
+`podman machine init`
+
+`podman machine start`
+
+### Fourth, ensure your architecture matches the architecture of the base image in the Contianerfiles. Uncomment the correct Containerfile architecture for your use case
 
 
 ### Finally, run the podman compose up command from the directory holding this repository. 
