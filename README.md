@@ -15,8 +15,23 @@ For podman-compose:
 
 https://github.com/containers/podman-compose
 
-### Third, run the podman compose up command from the directory holding this repository. 
+### Third, ensure your architecture matches the architecture of the base image in the Contianerfiles. Uncomment the correct Containerfile architecture for your use case
+
+
+### Finally, run the podman compose up command from the directory holding this repository. 
 
 `podman compose up`
 
-If this command does not work, check that you are in the directory with the podman-compose.yml file
+
+
+
+
+## Troubleshooting
+
+If the `podman compose up` command does not work, check that you are in the directory with the podman-compose.yml file
+
+If the `podman compose up` function says it can't find the file, ensure you have podman-compose installed and not docker-compose. If you have docker-compose running underneath `podman compose up`, then use the following command:
+
+`podman compose -f podman-compose.yml up`
+
+Ensure your architecture matches the architecture provided for the base images in the Containerfiles (e.g., if you're running Mac M-series, you need the aarch64 python image not the default one)

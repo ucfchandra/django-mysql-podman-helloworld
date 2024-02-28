@@ -1,4 +1,9 @@
-FROM mysql:8.3
+# Mac/Windows/Linux x86
+# FROM mysql:8.3
+
+# Mac M-Series
+FROM arm64v8/mysql:8.3
+
 
 ENV MYSQL_DATABASE helloworld
 ENV MYSQL_ROOT_PASSWORD password
